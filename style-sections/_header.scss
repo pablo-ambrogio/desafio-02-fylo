@@ -1,0 +1,31 @@
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.menu {
+    @include width-height (90%, auto);
+    @include d__grid (2, 1fr, auto);
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.logo {
+    place-self: center left;
+}
+
+.navbar {
+    &__links {
+        list-style: none;
+        @include d__flex(row, flex-end, center);
+        column-gap: 3rem;
+        font-family: $raleway;
+        font-weight: 400;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $blue-dark;
+    }
+}
+
