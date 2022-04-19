@@ -15,6 +15,7 @@
 }
 
 .navbar {
+    
     &__links {
         list-style: none;
         @include d__flex(row, flex-end, center);
