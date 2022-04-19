@@ -67,6 +67,9 @@
   background: url(../images/bg-curve-desktop.svg) no-repeat bottom center;
   z-index: -1;
 }
+.fylo:nth-child(2) .fylo-components__title {
+  font-size: 2rem;
+}
 .fylo-components {
   width: 80%;
   height: auto;
@@ -156,7 +159,7 @@
 }
 .fylo-components .card {
   position: absolute;
-  bottom: 2rem;
+  bottom: 7rem;
   width: 280px;
   height: auto;
   background-color: #fff;
@@ -412,6 +415,9 @@
     box-sizing: border-box;
     column-gap: 0;
   }
+  .fylo:nth-child(1) {
+    position: relative;
+  }
   .fylo:nth-child(1) .fylo-components__title {
     text-align: center;
   }
@@ -422,6 +428,14 @@
     padding-top: 3rem;
   }
   .fylo:nth-child(2)::before {
+    display: none;
+  }
+  .fylo:nth-child(2)::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    bottom: 100%;
     background: url(../images/bg-curve-mobile.svg) no-repeat bottom center;
   }
   .fylo:nth-child(2) .fylo-components__title {
@@ -458,6 +472,8 @@
     margin: auto;
   }
   .fylo-components .card {
+    width: 80%;
+    max-width: 280px;
     position: relative;
     opacity: 1;
     bottom: 0;
@@ -466,6 +482,7 @@
   }
   .fylo-figure {
     order: 1;
+    text-align: center;
   }
   .fylo-figure__img {
     width: 90%;

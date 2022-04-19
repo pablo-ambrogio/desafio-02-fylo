@@ -24,6 +24,10 @@
             background: url(../images/bg-curve-desktop.svg) no-repeat bottom center;
             z-index: -1;
         }
+
+        .fylo-components__title {
+            font-size: 2rem;
+        }
     }
 
     &-components {
@@ -116,7 +120,7 @@
 
         .card{
             position: absolute;
-            bottom: 2rem;
+            bottom: 7rem;
             @include width-height(280px, auto);
             background-color: #fff;
             box-shadow: 0 0 10px rgba(204, 204, 204, 0.3);
