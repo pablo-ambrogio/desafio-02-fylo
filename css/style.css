@@ -512,6 +512,7 @@
     width: auto;
     margin: auto;
     align-items: center;
+    margin: auto;
   }
   .access__email {
     width: 80%;
